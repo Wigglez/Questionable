@@ -1,6 +1,8 @@
 name: Mirror Releases from Private Repo
 
 on:
+  repository_dispatch:
+    types: [mirror-release]
   workflow_dispatch:
     inputs:
       release_tag:
@@ -82,9 +84,9 @@ jobs:
         env:
           PRIVATE_TAG: ${{ steps.get-private-latest.outputs.tag_name }}
           PUBLIC_TAG: ${{ steps.get-public-latest.outputs.tag_name }}
-          FORCE_RELEASE: ${{ github.event.inputs.force_release || 'false' }}
-          SPECIFIC_TAG: ${{ github.event.inputs.release_tag || '' }}
-          CHECK_FOR_NEW: ${{ github.event.inputs.check_for_new || 'true' }}
+          FORCE_RELEASE: ${{ github.event.inputs.force_release || github.event.client_payload.force_release || 'false' }}
+          SPECIFIC_TAG: ${{ github.event.inputs.release_tag || github.event.client_payload.release_tag || '' }}
+          CHECK_FOR_NEW: ${{ github.event.inputs.check_for_new || github.event.client_payload.check_for_new || 'true' }}
         run: |
           echo "Private repo latest: '$PRIVATE_TAG'"
           echo "Public repo latest: '$PUBLIC_TAG'"
@@ -138,7 +140,7 @@ jobs:
         id: get-private-release
         env:
           PRIVATE_TOKEN: ${{ secrets.AMBIV_PAT }}
-          RELEASE_TAG: ${{ github.event.inputs.release_tag || '' }}
+          RELEASE_TAG: ${{ github.event.inputs.release_tag || github.event.client_payload.release_tag || '' }}
         run: |
           # Set the private repo details
           PRIVATE_REPO="WigglyMuffin/Ambivalence"
