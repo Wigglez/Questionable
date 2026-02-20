@@ -1,6 +1,6 @@
 {
   "$schema": "https://github.com/WigglyMuffin/Questionable/raw/refs/heads/main/QuestPaths/quest-v1.json",
-  "Author": "JerryWester",
+  "Author": ["JerryWester", "Wigglez"],
   "QuestSequence": [
     {
       "Sequence": 0,
