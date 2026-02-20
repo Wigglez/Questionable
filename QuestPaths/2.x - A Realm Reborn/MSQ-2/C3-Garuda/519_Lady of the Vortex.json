@@ -21,6 +21,60 @@
       "Sequence": 1,
       "Steps": [
         {
+          "Position": {
+            "X": 29.821457,
+            "Y": -19.000002,
+            "Z": 103.27891
+          },
+          "TerritoryId": 132,
+          "InteractionType": "WalkTo",
+          "AetheryteShortcut": "Gridania",
+          "SkipConditions": {
+            "StepIf": {
+              "InTerritory": [331]
+            }
+          }
+        },
+        {
+          "DataId": 1000106,
+          "TerritoryId": 132,
+          "InteractionType": "Interact",
+          "DialogueChoices": [
+            {
+              "Type": "YesNo",
+              "Prompt": "TEXT_MANFST404_00519_Q3_000_032",
+              "Yes": true
+            }
+          ],
+          "SkipConditions": {
+            "StepIf": {
+              "InTerritory": [331]
+            }
+          }
+        },
+        {
+          "DataId": 1006492,
+          "Position": {
+            "X": 7.3395386,
+            "Y": -21.970974,
+            "Z": 121.934814
+          },
+          "TerritoryId": 132,
+          "InteractionType": "Interact",
+          "DialogueChoices": [
+            {
+              "Type": "YesNo",
+              "Prompt": "TEXT_MANFST404_00519_Q2_000_031",
+              "Yes": true
+            }
+          ],
+          "SkipConditions": {
+            "StepIf": {
+              "InTerritory": [331]
+            }
+          }
+        },
+        {
           "DataId": 1007690,
           "Position": {
             "X": -84.58081,
