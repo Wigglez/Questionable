@@ -1,6 +1,6 @@
 {
   "$schema": "https://github.com/WigglyMuffin/Questionable/raw/refs/heads/main/QuestPaths/quest-v1.json",
-  "Author": "liza",
+  "Author": ["liza", "Wigglez"],
   "QuestSequence": [
     {
       "Sequence": 0,
@@ -169,9 +169,21 @@
         }
       ]
     },
+    
     {
       "Sequence": 255,
       "Steps": [
+        {
+          "Position": {
+            "X": -55.5555,
+            "Y": 34.0616,
+            "Z": 163.5555
+          },
+          "TerritoryId": 134,
+          "TargetTerritoryId": 128,
+          "InteractionType": "WalkTo",
+          "$": "Merged from Sequence 3: straight-line gate walk"
+        },
         {
           "DataId": 1000927,
           "Position": {
@@ -181,7 +193,6 @@
           },
           "TerritoryId": 128,
           "InteractionType": "CompleteQuest",
-          "AetheryteShortcut": "Limsa Lominsa",
           "AethernetShortcut": [
             "[Limsa Lominsa] Aetheryte Plaza",
             "[Limsa Lominsa] Marauders' Guild"
