@@ -1,6 +1,6 @@
 {
   "$schema": "https://github.com/WigglyMuffin/Questionable/raw/refs/heads/main/QuestPaths/quest-v1.json",
-  "Author": "JerryWester",
+  "Author": ["JerryWester", "Wigglez"],
   "QuestSequence": [
     {
       "Sequence": 0,
@@ -151,6 +151,52 @@
     {
       "Sequence": 3,
       "Steps": [
+        {
+            "Position": {
+                "X": -625.56866,
+                "Y": 61.87613,
+                "Z": -839.6979
+            },
+            "TerritoryId": 140,
+            "InteractionType": "WalkTo",
+            "$": "Move to safe spot"
+        },
+        {
+          "Position": {
+            "X": -625.56866,
+            "Y": 61.87613,
+            "Z": -839.6979
+          },
+          "TerritoryId": 140,
+          "InteractionType": "Combat",
+          "DelaySecondsAtStart": 5,
+          "EnemySpawnType": "FinishCombatIfAny",
+          "KillEnemyDataIds": [],
+          "$": "Handle any combat encountered at safe spot"
+        },
+        {
+            "Position": {
+                "X": -660.1891,
+                "Y": 62.11622,
+                "Z": -809.68207
+            },
+            "TerritoryId": 140,
+            "InteractionType": "WalkTo",
+            "$": "Move to single player duty entrance"
+        },
+        {
+          "Position": {
+                "X": -660.1891,
+                "Y": 62.11622,
+                "Z": -809.68207
+           },
+          "TerritoryId": 140,
+          "InteractionType": "Combat",
+          "DelaySecondsAtStart": 3,
+          "EnemySpawnType": "FinishCombatIfAny",
+          "KillEnemyDataIds": [],
+          "$": "Handle any combat encountered at single player duty entrance"
+        },
         {
           "DataId": 2002252,
           "Position": {
