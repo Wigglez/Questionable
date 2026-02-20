@@ -1,6 +1,6 @@
 {
   "$schema": "https://github.com/WigglyMuffin/Questionable/raw/refs/heads/main/QuestPaths/quest-v1.json",
-  "Author": "JerryWester",
+  "Author": ["JerryWester", "Wigglez"],
   "QuestSequence": [
     {
       "Sequence": 0,
@@ -48,9 +48,9 @@
         {
           "DataId": 1006410,
           "Position": {
-            "X": 232.59314,
-            "Y": 359.00003,
-            "Z": -563.95825
+            "X": 232.8112,
+            "Y": 357.38858,
+            "Z": -567.4722
           },
           "TerritoryId": 155,
           "InteractionType": "Interact",
