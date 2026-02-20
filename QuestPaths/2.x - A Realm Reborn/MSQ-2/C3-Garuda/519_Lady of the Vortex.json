@@ -32,6 +32,9 @@
           "SkipConditions": {
             "StepIf": {
               "InTerritory": [331]
+            },
+            "AetheryteShortcutIf": {
+              "InTerritory": [331]
             }
           }
         },
