@@ -1,9 +1,6 @@
 {
   "$schema": "https://github.com/WigglyMuffin/Questionable/raw/refs/heads/main/QuestPaths/quest-v1.json",
-  "Author": [
-    "JerryWester",
-    "liza"
-  ],
+  "Author": ["JerryWester", "liza", "Wigglez"],
   "QuestSequence": [
     {
       "Sequence": 0,
@@ -93,138 +90,246 @@
       "Sequence": 4,
       "Steps": [
         {
-          "Position": {
-            "X": -496.3975,
-            "Y": 7.8566074,
-            "Z": 71.93724
-          },
-          "StopDistance": 0.5,
-          "TerritoryId": 152,
-          "InteractionType": "Combat",
-          "EnemySpawnType": "AutoOnEnterArea",
-          "ComplexCombatData": [
-            {
-              "DataId": 47,
-              "IgnoreQuestMarker": true,
-              "MinimumKillCount": 1
-            }
-          ],
-          "Mount": false,
-          "Sprint": false
-        },
-        {
-          "Position": {
-            "X": -393.63492,
-            "Y": -0.28167063,
-            "Z": 72.2678
-          },
-          "StopDistance": 0.5,
-          "TerritoryId": 152,
-          "InteractionType": "Combat",
-          "EnemySpawnType": "AutoOnEnterArea",
-          "ComplexCombatData": [
-            {
-              "DataId": 2483,
-              "IgnoreQuestMarker": true,
-              "MinimumKillCount": 3
-            }
-          ],
-          "Mount": false,
-          "Sprint": false
-        },
-        {
-          "Position": {
-            "X": -359.14633,
-            "Y": 4.4168873,
-            "Z": 63.1877
-          },
-          "StopDistance": 0.5,
-          "TerritoryId": 152,
-          "InteractionType": "Combat",
-          "EnemySpawnType": "AutoOnEnterArea",
-          "ComplexCombatData": [
-            {
-              "DataId": 2484,
-              "IgnoreQuestMarker": true,
-              "MinimumKillCount": 1
-            }
-          ],
-          "Mount": false,
-          "Sprint": false
-        },
-        {
-          "Position": {
-            "X": -324.51694,
-            "Y": 8.511529,
-            "Z": 69.76721
-          },
-          "StopDistance": 0.5,
-          "TerritoryId": 152,
-          "InteractionType": "Combat",
-          "EnemySpawnType": "AutoOnEnterArea",
-          "ComplexCombatData": [
-            {
-              "DataId": 2485,
-              "IgnoreQuestMarker": true,
-              "MinimumKillCount": 2
-            }
-          ],
-          "Mount": false,
-          "Sprint": false
-        },
-        {
           "DataId": 2482,
           "Position": {
-            "X": -238.72742,
-            "Y": 7.8999486,
-            "Z": 64.43884
-          },
+                "X": -507.38052,
+                "Y": 8.868391,
+                "Z": 71.95016
+            },
           "StopDistance": 0.25,
           "TerritoryId": 152,
-          "InteractionType": "WaitForNpcAtPosition",
+          "InteractionType": "WaitForObjectAtPosition",
           "NpcWaitDistance": 5,
           "Mount": false,
           "Sprint": false
         },
         {
+            "Position": {
+                "X": -481.42728,
+                "Y": 6.422104,
+                "Z": 81.63048
+            },
+            "TerritoryId": 152,
+            "InteractionType": "WalkTo",
+            "Mount": false,
+            "Sprint": false
+        },
+        {
           "Position": {
-            "X": -242.57193,
-            "Y": 11.837363,
-            "Z": 19.533478
-          },
-          "StopDistance": 0.5,
+                "X": -481.42728,
+                "Y": 6.422104,
+                "Z": 81.63048
+            },
           "TerritoryId": 152,
           "InteractionType": "Combat",
+          "DelaySecondsAtStart": 2,
           "EnemySpawnType": "AutoOnEnterArea",
-          "ComplexCombatData": [
-            {
-              "DataId": 2487,
-              "IgnoreQuestMarker": true,
-              "MinimumKillCount": 2
-            },
-            {
-              "DataId": 2488,
-              "IgnoreQuestMarker": true,
-              "MinimumKillCount": 1
-            }
-          ],
+          "KillEnemyDataIds": [47],
           "Mount": false,
           "Sprint": false,
-          "CombatDelaySecondsAtStart": 3
+          "$": "Malevolent Fungus (x1)"
         },
         {
           "DataId": 2482,
           "Position": {
-            "X": -315.8217,
-            "Y": 11.905772,
-            "Z": -34.105675
-          },
+                "X": -450.86685,
+                "Y": 1.4933968,
+                "Z": 83.65083
+            },
           "StopDistance": 0.25,
           "TerritoryId": 152,
-          "InteractionType": "WaitForNpcAtPosition",
+          "InteractionType": "WaitForObjectAtPosition",
+          "NpcWaitDistance": 5,
+          "Mount": false,
+          "Sprint": false
+        },
+        {
+          "DataId": 2482,
+          "Position": {
+                "X": -419.417,
+                "Y": 0.14398265,
+                "Z": 83.16774
+            },
+          "StopDistance": 0.25,
+          "TerritoryId": 152,
+          "InteractionType": "WaitForObjectAtPosition",
+          "NpcWaitDistance": 5,
+          "Mount": false,
+          "Sprint": false
+        },
+        {
+            "Position": {
+                "X": -378.81943,
+                "Y": 0.9094964,
+                "Z": 66.22969
+            },
+            "TerritoryId": 152,
+            "InteractionType": "WalkTo",
+            "Mount": false,
+            "Sprint": false
+        },
+        {
+          "Position": {
+                "X": -378.81943,
+                "Y": 0.9094964,
+                "Z": 66.22969
+            },
+          "TerritoryId": 152,
+          "InteractionType": "Combat",
+          "DelaySecondsAtStart": 2,
+          "EnemySpawnType": "AutoOnEnterArea",
+          "KillEnemyDataIds": [2483],
           "Mount": false,
           "Sprint": false,
-          "NpcWaitDistance": 5
+          "$": "Malevolent Squirrel (x3)"
+        },
+        {
+            "Position": {
+                "X": -346.51294,
+                "Y": 6.312253,
+                "Z": 62.24674
+            },
+            "TerritoryId": 152,
+            "InteractionType": "WalkTo",
+            "Mount": false,
+            "Sprint": false
+        },
+        {
+          "Position": {
+                "X": -346.51294,
+                "Y": 6.312253,
+                "Z": 62.24674
+            },
+          "TerritoryId": 152,
+          "InteractionType": "Combat",
+          "DelaySecondsAtStart": 2,
+          "EnemySpawnType": "AutoOnEnterArea",
+          "KillEnemyDataIds": [2484],
+          "Mount": false,
+          "Sprint": false,
+          "$": "Malevolent Galago (x1)"
+        },
+        {
+            "Position": {
+                "X": -313.74997,
+                "Y": 8.092487,
+                "Z": 82.45006
+            },
+            "TerritoryId": 152,
+            "InteractionType": "WalkTo",
+            "Mount": false,
+            "Sprint": false
+        },
+        {
+          "Position": {
+                "X": -313.74997,
+                "Y": 8.092487,
+                "Z": 82.45006
+            },
+          "TerritoryId": 152,
+          "InteractionType": "Combat",
+          "DelaySecondsAtStart": 2,
+          "EnemySpawnType": "AutoOnEnterArea",
+          "KillEnemyDataIds": [2485],
+          "Mount": false,
+          "Sprint": false,
+          "$": "Malevolent Ked (x2)"
+        },
+        {
+          "DataId": 2482,
+          "Position": {
+                "X": -283.93427,
+                "Y": 7.276271,
+                "Z": 98.03231
+            },
+          "StopDistance": 0.25,
+          "TerritoryId": 152,
+          "InteractionType": "WaitForObjectAtPosition",
+          "NpcWaitDistance": 5,
+          "Mount": false,
+          "Sprint": false
+        },
+        {
+          "DataId": 2482,
+          "Position": {
+                "X": -267.51584,
+                "Y": 6.6916447,
+                "Z": 90.286575
+            },
+          "StopDistance": 0.25,
+          "TerritoryId": 152,
+          "InteractionType": "WaitForObjectAtPosition",
+          "NpcWaitDistance": 5,
+          "Mount": false,
+          "Sprint": false
+        },
+        {
+          "DataId": 2482,
+          "Position": {
+                "X": -255.84544,
+                "Y": 11.492955,
+                "Z": 36.59282
+            },
+          "StopDistance": 0.25,
+          "TerritoryId": 152,
+          "InteractionType": "WaitForObjectAtPosition",
+          "NpcWaitDistance": 5,
+          "Mount": false,
+          "Sprint": false
+        },
+        {
+            "Position": {
+                "X": -254.20119,
+                "Y": 11.42078,
+                "Z": -5.5896573
+            },
+            "TerritoryId": 152,
+            "InteractionType": "WalkTo",
+            "Mount": false,
+            "Sprint": false
+        },
+        {
+          "Position": {
+                "X": -254.20119,
+                "Y": 11.42078,
+                "Z": -5.5896573
+            },
+          "TerritoryId": 152,
+          "InteractionType": "Combat",
+          "DelaySecondsAtStart": 2,
+          "EnemySpawnType": "AutoOnEnterArea",
+          "KillEnemyDataIds": [2487,2488],
+          "Mount": false,
+          "Sprint": false,
+          "$": "Malevolent Stroper (x1), Malevolent Seedling (x2)"
+        },
+        {
+          "DataId": 2482,
+          "Position": {
+                "X": -286.692,
+                "Y": 11.75,
+                "Z": -23.839016
+            },
+          "StopDistance": 0.25,
+          "TerritoryId": 152,
+          "InteractionType": "WaitForObjectAtPosition",
+          "NpcWaitDistance": 5,
+          "Mount": false,
+          "Sprint": false
+        },
+        {
+          "DataId": 2482,
+          "Position": {
+                "X": -316.77347,
+                "Y": 12.01387,
+                "Z": -34.666443
+            },
+          "StopDistance": 0.25,
+          "TerritoryId": 152,
+          "InteractionType": "WaitForObjectAtPosition",
+          "NpcWaitDistance": 5,
+          "Mount": false,
+          "Sprint": false
         },
         {
           "DataId": 2003347,
